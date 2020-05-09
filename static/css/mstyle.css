@@ -12,6 +12,7 @@ body {
   text-align: center;
   background-color: currentColor;
   height: 100vh;
+  
 }
 
 h1 {
@@ -30,6 +31,13 @@ a {
 
 p { margin: 1.375rem 0; }
 
+hr {
+  color:white; 
+  width: 75px;
+}
+
+
+
 .logoClass {
   padding-top: 20%;
   width: 100%;
@@ -39,8 +47,12 @@ p { margin: 1.375rem 0; }
   width:95%;
 }
 
+a:hover {
+  outline-style: none;
+}
+
 .serachForm{
-  padding-top: 30px;
+  padding-top: 20px;
   display: inline-flex;
   width: 100%;
 }
@@ -51,8 +63,14 @@ p { margin: 1.375rem 0; }
  width:75%;
 }
 
+.pageIndexing {
+  color: #485460 ;
+  padding: 30px;
+}
+
+
+
 .btn {
-  width: 25%;
   margin-left: 10px;
   border-radius: 0.60rem;
   color:#b2bec3;
@@ -64,6 +82,11 @@ p { margin: 1.375rem 0; }
 .btn-dark:hover{
   background-color:#485460;
   color:#b2bec3;
+}
+
+.btn-outline-dark:hover{
+  color:#485460;
+  background-color: transparent ;
 }
 
 .icon {
@@ -347,9 +370,13 @@ p { margin: 1.375rem 0; }
 }
 
 .weatherInfo {
+  
   color:#485460;
 }
 
+.footerco{
+  bottom: 0;
+}
 
 /* Absolute Center Spinner */
 .loading {
