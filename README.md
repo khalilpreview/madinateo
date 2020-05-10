@@ -2,8 +2,8 @@
 (Madinateo) it's a weather web application  simple and easy to use built with flask and OWM API.
 Give it a try : https://madinateo.herokuapp.com/
 
-![Home screenshot]()
-![Home screenshot]()
+![Home screenshot](https://github.com/khalilpreview/madinateo/blob/master/static/image/index.png)
+![Home screenshot](https://github.com/khalilpreview/madinateo/blob/master/static/image/result.png)
 
 # Built with
 Pure python backend ...
