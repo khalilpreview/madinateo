@@ -51,10 +51,10 @@ a:hover {
   outline-style: none;
 }
 
-.serachForm{
+.serachForm {
   padding-top: 20px;
-  display: inline-flex;
-  width: 95%;
+  display: flex;
+  width: 100%;
 }
 
 .form-control{
@@ -76,6 +76,8 @@ a:hover {
 
 .btn-dark{
   background-color:#485460;
+  max-width: 20%;
+  min-width: 15%;
 }
 
 .btn-dark:hover{
