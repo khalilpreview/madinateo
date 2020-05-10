@@ -58,8 +58,11 @@ def home():
         weather = obs_obj.get_weather() # find weather for user input
         city = str(form.sbarre.data) # city name from user input
         index_page = False 
-        now = time.strftime('%c')
 
+        # getting current time 
+        now = time.strftime('%c')
+        
+        # weather dict
         weather_info = {
             'timing':str(now),
             'statu' : str(weather.get_status()),
@@ -83,4 +86,4 @@ def home():
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
-    app.run(threaded=True , debug=True , port=5000)
+    app.run(threaded=True ,  port=5000)
