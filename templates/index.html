@@ -16,8 +16,6 @@
 
   <body>
     
-  
-
     <div class="loading"></div>
     
 
@@ -33,14 +31,14 @@
          {{ form.submit(class="btn btn-dark")}}
        </form>
      </div>
-     <p>Searching by city ...</p>
+     
     </div>
     
 
     {% if index_page == True %}
     <div class="container" style="padding-top: 50px;">
       <div class="container pageIndexing">
-       
+        <p>Searching by city and Country code ...</p>
       </div>
     </div>
     {% endif %}
@@ -92,21 +90,57 @@
       <div class="container">
         {% if weather_info %}
           <div class="weatherInfo" align="center">
-            
-            <h4><i data-feather="map-pin"></i> City</h4>
-            <h5>{{city}}</h5>
-            <h4>Weather</h4>
-            <h5>{{weather_info['statu']}} , {{weather_info['detailed-statu']}}. </h5>
+
             <hr>
-            <h4>Temperature</h4>
-            <h5>mid :{{weather_info['temperature']}}</h5>
-            <h5>max : {{weather_info['temp-max']}} min : {{weather_info['temp-min']}}</h5>
-            <h5>Wind: {{weather_info['wind']}}</h5>
-            <h5>Humidity : {{weather_info['humidity']}}</h5>
+            <h4>{{ weather_info['timing']}}</h4>
+            <hr>
+
+            <div class="row">
+
+              <div class="col-md">
+                <img src="{{url_for('.static' , filename='image/temperature.svg')}}" width="50px">
+                <hr>
+                <h4>Temperature</h4>
+                <hr>
+                <h5>{{weather_info['temperature']}}</h5>
+                <hr>
+              </div>
+
+              <div class="col-md">
+                <img src="{{url_for('.static' , filename='image/wind.svg')}}" width="50px">
+                <hr>
+                <h4>Wind</h4>
+                <hr>
+                <h5>{{weather_info['wind']}}</h5>
+                <hr>
+              </div>
+
+              <div class="col-md">
+                <img src="{{url_for('.static' , filename='image/humidity.svg')}}" width="50px">
+                <hr>
+                <h4>Humidity</h4>
+                <hr>
+                <h5>{{weather_info['humidity']}}</h5>
+                <hr>
+              </div>
+
+              <div class="col-md">
+                <img src="{{url_for('.static' , filename='image/pressure.svg')}}" width="50px">
+                <hr>
+                <h4>Pressure</h4>
+                <hr>
+                <h5>{{weather_info['pressure']}}</h5>
+                <hr>
+              </div>
+
+            </div>
+
             <hr>
             <h4>Sunset & Sunrise time</h4>
+            <hr>
             <h5><i data-feather="sunset"></i> {{weather_info['sun-rise'][1]}} GMT</h5>
             <h5><i data-feather="sunrise"></i> {{weather_info['sun-set'][1]}} GMT</h5>
+          <hr>
 
           </div>
         {% endif %}

@@ -39,7 +39,7 @@ hr {
 
 
 .logoClass {
-  padding-top: 20%;
+  padding-top: 15%;
   width: 100%;
 }
 
@@ -54,20 +54,18 @@ a:hover {
 .serachForm{
   padding-top: 20px;
   display: inline-flex;
-  width: 100%;
+  width: 95%;
 }
 
 .form-control{
  background-color:#485460;
  color:#b2bec3;
- width:75%;
 }
 
 .pageIndexing {
   color: #485460 ;
   padding: 30px;
 }
-
 
 
 .btn {
@@ -79,6 +77,7 @@ a:hover {
 .btn-dark{
   background-color:#485460;
 }
+
 .btn-dark:hover{
   background-color:#485460;
   color:#b2bec3;
